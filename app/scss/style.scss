@@ -1,9 +1,248 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
 
+.header {
+  min-height: 144px;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 45px;
+  }
 
+  .menu {
+    &__list {
+      display: flex;
+    }
+    &__item + .menu__item {
+      margin-left: 30px;
+    }
+    &__link {
+      @extend %rubik-500;
+      font-size: 15px;
+      line-height: 12px;
+      color: #436372;
+    }
+  }
+}
 
-@import 'media'
+.user-nav {
+  display: flex;
+  &__box {
+    display: flex;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  &__link--search,
+  &__link--more {
+    border-radius: 50%;
+    height: 51px;
+    width: 51px;
+  }
+  &__link--search {
+    background-color: #edf1f4;
+  }
+  &__link--search::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 15px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__box {
+    width: 178px;
+    height: 51px;
+    border-radius: 25px;
+    background-color: #fcd7b6;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  &__box::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: #fde7d3;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 9px 0;
+  }
+  &__num {
+    background-color: #fff;
+    color: #99a5ac;
+    font-size: 10px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    top: -8px;
+    right: -10px;
+    @extend %dmsans-400;
+  }
+  &__link--more {
+    background-color: #a3bbc8;
+  }
+  &__link--more::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/icons/more.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  margin-top: 80px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dae4e9;
+  &__contact {
+    margin-right: 50px;
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__address,
+  &__email,
+  &__phone {
+    display: block;
+    color: $default;
+  }
+  &__address {
+    width: 177px;
+    font-style: normal;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__phone,
+  &__email {
+    font-size: 14px;
+    line-height: 32px;
+  }
+  &__nav {
+    margin-right: 30px;
+  }
+  &__nav,
+  &__item-form {
+    padding-top: 15px;
+  }
+  &__title {
+    color: #1f2044;
+    @extend %dmsans-700;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  &__link {
+    display: block;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 32px;
+    color: $default;
+  }
+  &__text {
+    margin-bottom: 25px;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 32px;
+    color: $default;
+    width: 234px;
+  }
+  &__form {
+    display: flex;
+  }
+  &__form-input {
+    border: none;
+    max-width: 170px;
+    width: 100%;
+    padding: 12px 10px 14px 15px;
+    background: #fef7f0;
+    &::placeholder {
+      font-size: 12px;
+      @extend %dmsans-400;
+      color: #234969;
+    }
+  }
+  &__form-btn {
+    background-color: #a3bbc8;
+    color: #f4f7f8;
+    font-size: 14px;
+    line-height: 21px;
+    border: none;
+    padding: 0 16px;
+    cursor: pointer;
+  }
+}
+
+.footer-bottom {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__copy {
+    line-height: 32px;
+  }
+}
+
+.bottom-menu {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    padding: 0 13px;
+    position: relative;
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+  &__item + .bottom-menu__item::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 5px 0;
+    background-color: $default;
+  }
+  &__link {
+    color: $default;
+    line-height: 32px;
+    position: relative;
+  }
+}
+
+@import "media";
