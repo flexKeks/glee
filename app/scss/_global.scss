@@ -18,7 +18,20 @@ body {
 }
 
 .container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container--big {
   width: 1770px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  color: #191919;
+  @extend %dmsans-700;
+  text-align: center;
 }
