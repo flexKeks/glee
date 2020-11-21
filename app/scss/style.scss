@@ -338,10 +338,53 @@
     font-size: 16px;
     line-height: 40px;
     position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .trends__item-links {
+        transform: translate(-50%, -153px);
+      }
+    }
   }
 
   &__item-img {
     margin: 0 auto;
+  }
+
+  &__item-links {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 300%);
+    transition: all 0.4s;
+  }
+  &__item-link {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    transition: all 0.3s;
+
+    path {
+      transition: all 0.3s;
+    }
+
+    & + & {
+      margin-left: 15px;
+    }
+
+    &:hover {
+      background-color: #a3bbc8;
+      path {
+        fill: #fff;
+      }
+    }
   }
 
   &__item-title {
