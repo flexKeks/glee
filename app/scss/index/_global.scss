@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 24px;
+  color: $default;
+  background-color: #fff;
+  @extend %rubik-400;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  &--big {
+    max-width: 1800px;
+  }
+}
+
+.title {
+  font-size: 36px;
+  color: #191919;
+  @extend %dmsans-700;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  @extend %rubik-500;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.btn--arrow {
+  display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 18px;
+    top: 50%;
+    width: 22px;
+    height: 10px;
+    transform: translateY(-50%);
+  }
+}
+
+.filter-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 78px;
+}
+
+.filter-btn {
+  border: unset;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #8b8b8b;
+  @extend %dmsans-700;
+  padding: 0;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #191919;
+  }
+}
+
+.filter-btn + .filter-btn {
+  margin-left: 28px;
+}

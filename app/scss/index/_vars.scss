@@ -1,4 +1,9 @@
 $default: #7b7b7b;
+$text: #436372;
+$secondary: #243f4d;
+$bg: #a3bbc8;
+$secondary-bg: #fef7f0;
+$border: #e8e4df;
 
 %rubik-400 {
   font-family: "Rubik", sans-serif;
@@ -28,4 +33,12 @@ $default: #7b7b7b;
 %dmsans-700 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }

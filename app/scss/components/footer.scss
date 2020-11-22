@@ -1,0 +1,157 @@
+.footer {
+  &__top {
+    margin-top: 80px;
+    padding-bottom: 65px;
+    display: flex;
+    border-bottom: 1px solid #dae4e9;
+  }
+
+  &__contact {
+    margin-right: 98px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 26px;
+  }
+
+  &__address {
+    font-style: normal;
+    width: 200px;
+    font-size: 14px;
+    line-height: 32px;
+    @extend %rubik-400;
+    display: block;
+    color: $default;
+    a {
+      color: inherit;
+    }
+  }
+
+  &__address-text {
+    width: 180px;
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+
+  &__services {
+    margin-right: 175px;
+    width: 125px;
+  }
+
+  &__account {
+    margin-right: 212px;
+  }
+
+  &__nav,
+  &__account,
+  &__services,
+  &__item-form {
+    padding-top: 15px;
+  }
+
+  &__title {
+    color: #1f2044;
+    @extend %dmsans-700;
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: block;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 32px;
+    color: $default;
+  }
+
+  &__title--form {
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    margin-bottom: 34px;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $default;
+    width: 236px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__form-input {
+    border: none;
+    max-width: 170px;
+    width: 100%;
+    padding: 12px 10px 14px 15px;
+    height: 37px;
+    background: $secondary-bg;
+
+    &::placeholder {
+      font-size: 12px;
+      @extend %dmsans-400;
+      color: #234969;
+    }
+  }
+
+  &__form-btn {
+    background-color: $bg;
+    color: #f4f7f8;
+    font-size: 14px;
+    line-height: 21px;
+    height: 37px;
+    border: none;
+    padding: 0 16px;
+    cursor: pointer;
+  }
+
+  &__bottom {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 32px;
+  }
+
+  &__copy {
+    margin-left: -5px;
+    padding-bottom: 3px;
+  }
+}
+
+.bottom-menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 0 16px;
+    position: relative;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    & + &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: 5px 0;
+      background-color: $default;
+    }
+  }
+
+  &__link {
+    color: $default;
+    line-height: 32px;
+    position: relative;
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  min-height: 144px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 45px;
+  }
+}
