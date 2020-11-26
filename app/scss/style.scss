@@ -1,0 +1,20 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+@import "./components/header.scss";
+@import "./components/menu.scss";
+@import "./components/footer.scss";
+
+@import "./index/top-slider.scss";
+@import "./index/features.scss";
+@import "./index/trends.scss";
+@import "./index/popular-products.scss";
+@import "./index/new-products.scss";
+@import "./index/video-preview.scss";
+@import "./index/articles.scss";
+@import "./index/brands.scss";
+
+@import "media";

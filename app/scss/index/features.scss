@@ -1,0 +1,87 @@
+.features {
+  margin-bottom: 70px;
+
+  &__items {
+    display: flex;
+    background-color: $secondary-bg;
+    height: 170px;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 36px;
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+    }
+
+    &--support {
+      padding-left: 224px;
+      padding-right: 142px;
+      max-width: 566px;
+
+      .features__description {
+        width: 200px;
+      }
+
+      &::before {
+        background-image: url("../../images/icons/support.svg");
+        top: 49px;
+        left: 148px;
+        width: 50px;
+        height: 53px;
+      }
+    }
+
+    &--delivery {
+      max-width: 605px;
+
+      padding-top: 46px;
+      padding-left: 240px;
+      border-left: 1px solid $border;
+      border-right: 1px solid $border;
+
+      &::before {
+        background-image: url("../../images/icons/delivery.svg");
+        top: 58px;
+        left: 162px;
+        width: 53px;
+        height: 38px;
+      }
+    }
+
+    &--payment {
+      padding-left: 241px;
+      max-width: 598px;
+
+      .features__description {
+        width: 220px;
+      }
+
+      &::before {
+        background-image: url("../../images/icons/credit-card.svg");
+        top: 49px;
+        left: 152px;
+        width: 53px;
+        height: 53px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 38px;
+    color: #414141;
+    @extend %dmsans-700;
+  }
+
+  &__description {
+    color: #585858;
+    font-size: 16px;
+    line-height: 30px;
+    @extend %dmsans-400;
+  }
+}

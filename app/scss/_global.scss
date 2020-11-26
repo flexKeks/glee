@@ -48,28 +48,26 @@ body {
   @extend %rubik-500;
   font-size: 15px;
   line-height: 12px;
-}
+  &--arrow {
+    display: block;
+    position: relative;
 
-.btn--arrow {
-  display: block;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    right: 18px;
-    top: 50%;
-    width: 22px;
-    height: 10px;
-    transform: translateY(-50%);
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      right: 18px;
+      top: 50%;
+      width: 22px;
+      height: 10px;
+      transform: translateY(-50%);
+    }
   }
 }
 
 .filter-btns {
   display: flex;
   justify-content: center;
-  margin-bottom: 78px;
 }
 
 .filter-btn {
@@ -80,13 +78,17 @@ body {
   color: #8b8b8b;
   @extend %dmsans-700;
   padding: 0;
-  transition: all 0.3s;
+  transition: color 0.3s;
 
   &:hover {
     color: #191919;
   }
+
+  & + & {
+    margin-left: 30px;
+  }
 }
 
-.filter-btn + .filter-btn {
-  margin-left: 28px;
+.mixitup-control-active {
+  color: #191919;
 }

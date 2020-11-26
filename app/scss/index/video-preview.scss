@@ -1,0 +1,26 @@
+.video-preview {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+  &__play {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../images/icons/play-btn.svg");
+      background-position: center center;
+      top: 50%;
+      left: 50%;
+      width: 85px;
+      height: 100px;
+      transform: translate(-50%, -50%);
+      width: 128px;
+      height: 128px;
+    }
+  }
+}

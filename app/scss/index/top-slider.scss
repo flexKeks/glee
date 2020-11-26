@@ -1,0 +1,90 @@
+.top-slider {
+  &__inner {
+    background-color: #fcd7b6;
+  }
+
+  &__item {
+    padding-top: 220px;
+    padding-bottom: 280px;
+    margin-left: 300px;
+    margin-right: 50px;
+    position: relative;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 70px;
+    color: $secondary;
+    width: 430px;
+    @extend %rubik-500;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: $text;
+    @extend %rubik-400;
+    width: 370px;
+    margin-bottom: 36px;
+  }
+
+  &__link {
+    color: #fff;
+    background-color: $bg;
+    padding: 24px 25px;
+    width: 200px;
+    display: block;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("../../images/icons/right-arrow.svg");
+      position: absolute;
+      background-repeat: no-repeat;
+      right: 18px;
+      top: 50%;
+      width: 22px;
+      height: 10px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 102px;
+    left: 531px;
+  }
+
+  .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    li {
+      padding: 0 5px;
+      line-height: 0;
+
+      button {
+        padding: 0;
+        opacity: 0.4;
+        background-color: #fde3cc;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #fff;
+          color: $secondary;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

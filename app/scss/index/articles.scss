@@ -1,0 +1,111 @@
+.articles {
+  &__inner {
+    position: relative;
+    height: 448px;
+    padding-top: 120px;
+  }
+  &__title {
+    text-align: left;
+  }
+  &__link {
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #262626;
+    position: absolute;
+    right: 0;
+    top: 129px;
+    padding-right: 24px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../images/icons/right-angel.svg");
+      background-repeat: no-repeat;
+      width: 6px;
+      height: 12px;
+      top: 50%;
+      right: -3px;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__box {
+    display: flex;
+    position: absolute;
+    top: 199px;
+    right: 0;
+  }
+}
+
+.article {
+  border-radius: 5px;
+  width: 370px;
+  position: relative;
+  &__title {
+    text-align: left;
+  }
+
+  &__img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__tag {
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    @extend %popins-700;
+    background-color: $bg;
+    padding: 5px 32px;
+    border-radius: 25px;
+    bottom: 157px;
+    left: 27px;
+  }
+
+  &__content {
+    height: 170px;
+    padding: 32px 28px 25px;
+    padding-bottom: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 290px;
+    font-size: 18px;
+    color: #262626;
+    @extend %dmsans-500;
+    line-height: 22px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  &__footer {
+    border-top: 1px solid #e0e0e0;
+    font-size: 12px;
+    line-height: 30px;
+    color: #222933;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-bottom: 17px;
+  }
+
+  &__date {
+    padding-left: 3px;
+    margin-right: 40px;
+  }
+
+  &__author {
+    padding-right: 3px;
+  }
+
+  & + & {
+    margin-left: 30px;
+  }
+}
