@@ -40,7 +40,7 @@
     }
 
     &--search {
-      background-color: #edf1f4;
+      background-color: $bg-secondary;
 
       &::after {
         content: "";

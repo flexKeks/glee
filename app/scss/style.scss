@@ -7,6 +7,7 @@
 @import "./components/header.scss";
 @import "./components/menu.scss";
 @import "./components/footer.scss";
+@import "./components/brands.scss";
 
 @import "./index/top-slider.scss";
 @import "./index/features.scss";
@@ -15,6 +16,53 @@
 @import "./index/new-products.scss";
 @import "./index/video-preview.scss";
 @import "./index/articles.scss";
-@import "./index/brands.scss";
+
+.top {
+  background-color: $bg-secondary;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__inner {
+    margin-top: 36px;
+    margin-left: 21px;
+  }
+  &__title {
+    font-size: 34px;
+    line-height: 24px;
+    @extend %rubik-300;
+    color: #222933;
+    margin-bottom: 12px;
+  }
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    padding-right: 20px;
+    color: #888c91;
+    position: relative;
+    &::after {
+      content: "/";
+      position: absolute;
+      top: 1px;
+      right: 7px;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+        padding-right: 0;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}
 
 @import "media";
