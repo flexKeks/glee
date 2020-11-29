@@ -1,0 +1,28 @@
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    padding-right: 20px;
+    color: #888c91;
+    position: relative;
+    &::after {
+      content: "/";
+      position: absolute;
+      top: 1px;
+      right: 7px;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+        padding-right: 0;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}

@@ -1,0 +1,24 @@
+.top {
+  background-color: $bg-secondary;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__inner {
+    margin-top: 36px;
+    margin-left: 21px;
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 24px;
+    @extend %rubik-300;
+    color: #222933;
+    margin-bottom: 12px;
+    &--centered {
+      position: relative;
+      left: -61px;
+    }
+  }
+}

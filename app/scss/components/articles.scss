@@ -1,19 +1,33 @@
 .articles {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-color: $secondary-bg;
+    top: 323px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   &__inner {
     position: relative;
-    height: 448px;
-    padding-top: 120px;
   }
+
   &__title {
     text-align: left;
+    margin-bottom: 53px;
   }
+
   &__link {
     @extend %dmsans-700;
     font-size: 16px;
     color: #262626;
     position: absolute;
-    right: 0;
-    top: 129px;
+    right: 2px;
+    top: 6px;
     padding-right: 24px;
 
     &::after {
@@ -28,11 +42,10 @@
       transform: translate(-50%, -50%);
     }
   }
+
   &__box {
     display: flex;
-    position: absolute;
-    top: 199px;
-    right: 0;
+    margin-left: -2px;
   }
 }
 
@@ -40,6 +53,8 @@
   border-radius: 5px;
   width: 370px;
   position: relative;
+  z-index: 3;
+
   &__title {
     text-align: left;
   }
@@ -60,12 +75,12 @@
     background-color: $bg;
     padding: 5px 32px;
     border-radius: 25px;
-    bottom: 157px;
+    top: 234px;
     left: 27px;
   }
 
   &__content {
-    height: 170px;
+    min-height: 170px;
     padding: 32px 28px 25px;
     padding-bottom: 0;
     background-color: #fff;

@@ -1,15 +1,11 @@
 .brands {
-  height: 436px;
-  padding-top: 265px;
+  height: 250px;
+  padding-top: 75px;
   background-color: $secondary-bg;
 
   &__list {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
-  &--small {
-    height: 250px;
-    padding-top: 75px;
   }
 }
