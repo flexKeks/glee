@@ -85,41 +85,39 @@
         </div>
       </div>
 
-      <section class="modal">
+      <section class="login">
         <div class="container">
-          <div class="modal__inner">
-            <form class="modal__form">
-              <label class="modal__label">
+          <div class="login__inner">
+            <form class="form">
+              <label class="form__label">
                 Username or email address *
-                <input
-                  class="modal__input"
-                  type="email"
-                  name="email"
-                  required
-                />
+                <input class="form__input" type="email" name="email" required />
               </label>
-              <label class="modal__label">
+              <label class="form__label">
                 Password *
                 <input
-                  class="modal__input"
+                  class="form__input"
                   type="password"
                   name="password"
                   required
                 />
               </label>
-              <button class="modal__btn" type="submit">Login</button>
-              <div class="modal__help-info">
-                <label class="modal__label">
-                  <input type="checkbox" required />
+              <button class="form__submit-btn" type="submit">Login</button>
+              <div class="login__help-info">
+                <label class="login__label">
+                  <input
+                    class="form__checkbox"
+                    type="checkbox"
+                    required
+                    checked
+                  />
                   Remember me
                 </label>
-                <a class="modal__help-text" href="#">Lost your password?</a>
+                <a class="login__help-text" href="#">Lost your password?</a>
               </div>
             </form>
-            <p class="modal__subtitle">Not registered? No problem</p>
-            <a class="modal__btn modal__btn-registration" href="#">
-              Create an account
-            </a>
+            <p class="login__subtitle">Not registered? No problem</p>
+            <a class="login__registration-btn" href="#"> Create an account </a>
           </div>
         </div>
       </section>
@@ -202,13 +200,16 @@
               Subscribe by our newsletter and get update protidin.
             </p>
             <form class="footer__form">
+              <label class="footer__form-label" for="email"></label>
               <input
-                name="email"
                 class="footer__form-input"
+                id="email"
+                name="email"
                 type="email"
                 placeholder="Email address"
                 required
               />
+
               <button class="footer__form-btn" type="submit">Subscribe</button>
             </form>
           </div>

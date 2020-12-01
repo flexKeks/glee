@@ -79,13 +79,14 @@ body {
   @extend %dmsans-700;
   padding: 0;
   transition: color 0.3s;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &:hover {
     color: #191919;
-  }
-
-  & + & {
-    margin-left: 30px;
   }
 }
 

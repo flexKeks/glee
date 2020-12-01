@@ -23,6 +23,7 @@
     @extend %rubik-400;
     display: block;
     color: $default;
+
     a {
       color: inherit;
     }
@@ -57,6 +58,10 @@
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
+
+    &--form {
+      margin-bottom: 18px;
+    }
   }
 
   &__link {
@@ -65,10 +70,6 @@
     font-size: 14px;
     line-height: 32px;
     color: $default;
-  }
-
-  &__title--form {
-    margin-bottom: 18px;
   }
 
   &__text {

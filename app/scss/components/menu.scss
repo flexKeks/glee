@@ -4,8 +4,10 @@
   }
 
   &__item {
-    & + & {
-      margin-left: 34px;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 

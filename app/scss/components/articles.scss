@@ -54,6 +54,11 @@
   width: 370px;
   position: relative;
   z-index: 3;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &__title {
     text-align: left;
@@ -118,9 +123,5 @@
 
   &__author {
     padding-right: 3px;
-  }
-
-  & + & {
-    margin-left: 30px;
   }
 }
