@@ -5,6 +5,7 @@ $bg: #a3bbc8;
 $secondary-bg: #fef7f0;
 $border: #e8e4df;
 $bg-secondary: #edf1f4;
+$bg-accent: #fcd7b6;
 
 %rubik-300 {
   font-family: "Rubik", sans-serif;
@@ -21,9 +22,19 @@ $bg-secondary: #edf1f4;
   font-weight: 500;
 }
 
+%rubik-700 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
 %popins-700 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+}
+
+%popins-600 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 %dmsans-400 {

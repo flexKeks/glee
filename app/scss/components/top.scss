@@ -4,11 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &__inner {
-    margin-top: 36px;
-    margin-left: 21px;
-  }
+  justify-content: center;
 
   &__title {
     font-size: 34px;
@@ -16,9 +12,11 @@
     @extend %rubik-300;
     color: #222933;
     margin-bottom: 12px;
-    &--centered {
-      position: relative;
-      left: -61px;
-    }
+    margin-top: 5px;
+  }
+
+  &__list {
+    margin: 0 auto;
+    text-align: center;
   }
 }

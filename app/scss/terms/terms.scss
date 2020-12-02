@@ -1,6 +1,10 @@
+.term-top__title--offset {
+  margin-left: -61px;
+}
+
 .terms {
   margin-top: 109px;
-  color: #243f4d;
+  color: $secondary;
   margin-bottom: 102px;
 
   &__item {
