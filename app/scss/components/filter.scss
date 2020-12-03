@@ -1,0 +1,25 @@
+.filter {
+  &__item {
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: $secondary;
+    @extend %dmsans-700;
+    margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 38px;
+      height: 2px;
+      background-color: $bg;
+      top: 11px;
+      right: -50px;
+    }
+  }
+}

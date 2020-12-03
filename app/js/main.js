@@ -7,6 +7,14 @@ $(function () {
     readOnly: true,
     spacing: "5px",
   });
+  $(".star--big").rateYo({
+    rating: 3.6,
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+    spacing: "5px",
+  });
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     prefix: "$",

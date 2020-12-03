@@ -11,12 +11,34 @@
   overflow: hidden;
   border-radius: 10px;
 
+  &--list {
+    height: 500px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: unset;
+    width: 100%;
+    margin-bottom: 38px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &:hover &__links {
     transform: translate(-50%, -153px);
   }
 
   &__img {
     margin: auto auto 124px;
+    &--list {
+      margin: 0;
+      border: 2px solid #f2f2f2;
+      object-fit: scale-down;
+      width: 370px;
+      flex: none;
+      margin-right: 56px;
+    }
   }
 
   &__links {
@@ -26,6 +48,10 @@
     bottom: 0;
     transform: translate(-50%, 300%);
     transition: transform 0.4s;
+
+    &--list {
+      display: none;
+    }
   }
 
   &__link {
@@ -57,6 +83,24 @@
     }
   }
 
+  &__box {
+    &--list {
+      display: none;
+    }
+  }
+
+  &__content-box {
+    display: none;
+
+    &--list {
+      display: block;
+    }
+  }
+
+  &__wrapper-box {
+    padding-top: 87px;
+  }
+
   &__label {
     color: $secondary;
     @extend %dmsans-500;
@@ -67,6 +111,20 @@
     transform: translate(-50%, 0);
     font-size: 16px;
     line-height: 40px;
+
+    &--list {
+      display: block;
+      margin-bottom: 15px;
+      position: relative;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      // @extend %rubik-400; не работает
+      left: unset;
+      bottom: unset;
+      transform: unset;
+      font-size: 40px;
+      color: #333333;
+    }
   }
 
   &__price {
@@ -76,5 +134,45 @@
     bottom: 24px;
     left: 50%;
     transform: translate(-50%, 0);
+
+    &--list {
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      display: block;
+      margin-bottom: 18px;
+      margin-top: 32px;
+      position: relative;
+      font-weight: 400;
+      left: unset;
+      bottom: unset;
+      transform: unset;
+      font-size: 30px;
+      line-height: 45px;
+      color: #333333;
+      padding-left: 3px;
+    }
+  }
+
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $secondary;
+    margin-bottom: 26px;
+    padding-left: 6px;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    border: unset;
+    border-radius: 6px;
+    color: #fff;
+    background-color: $bg;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 10px 53px 9px 52px;
+    margin-left: 1px;
+    letter-spacing: 1px;
+    cursor: pointer;
   }
 }
