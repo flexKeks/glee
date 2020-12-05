@@ -1,0 +1,63 @@
+.related {
+  margin-bottom: 115px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 62px;
+  }
+
+  &__title {
+    color: $secondary;
+  }
+
+  &__top-btns {
+    margin-top: -8px;
+  }
+
+  &__top-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid $bg-secondary;
+    background: transparent;
+    margin-right: 16px;
+    transition: border-color 0.4s;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      border-color: $bg;
+    }
+
+    &--left::before,
+    &--right::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 22px;
+      height: 9px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--left::before {
+      background-image: url("../../../images/icons/prev-arrow.svg");
+    }
+
+    &--right::before {
+      background-image: url("../../../images/icons/next-arrow.svg");
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+}
