@@ -112,16 +112,41 @@
     color: #222933;
     text-transform: uppercase;
     padding-top: 12px;
-    padding-left: 16px;
     padding-bottom: 17px;
   }
 
   &__date {
-    padding-left: 3px;
+    padding-left: 25px;
     margin-right: 40px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 20px;
+      top: -5px;
+      background-image: url("../../../images/icons/calendar.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   &__author {
-    padding-right: 3px;
+    padding-left: 22px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 20px;
+      top: -4px;
+      background-image: url("../../../images/icons/user.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }

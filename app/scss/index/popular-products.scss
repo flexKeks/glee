@@ -34,18 +34,18 @@
     &--right {
       padding-top: 83px;
 
-      & .popular-products__content {
-        width: 300px;
-        margin-right: 136px;
-      }
-
-      & .popular-products__title {
-        margin-bottom: 11px;
-      }
-
-      & .popular-products__img {
-        left: 153px;
-        bottom: 91px;
+      .popular-products {
+        &__content {
+          width: 300px;
+          margin-right: 136px;
+        }
+        &__title {
+          margin-bottom: 11px;
+        }
+        &__img {
+          left: 153px;
+          bottom: 91px;
+        }
       }
     }
   }

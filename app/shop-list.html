@@ -11,7 +11,7 @@
       <div class="container container--big">
         <div class="header__inner">
           <a class="logo header__logo" href="#">
-            <img class="logo-img" src="images/logo.png" alt="logo" />
+            <img class="logo__img" src="images/logo.png" alt="logo" />
           </a>
           <nav class="menu">
             <ul class="menu__list">
@@ -490,11 +490,41 @@
       <div class="brands">
         <div class="container">
           <ul class="brands__list">
-            <li><img src="images/brands/1.png" alt="brands-1" /></li>
-            <li><img src="images/brands/2.png" alt="brands-2" /></li>
-            <li><img src="images/brands/3.png" alt="brands-3" /></li>
-            <li><img src="images/brands/4.png" alt="brands-4" /></li>
-            <li><img src="images/brands/5.png" alt="brands-5" /></li>
+            <li class="brands__item">
+              <img
+                class="brands__img"
+                src="images/brands/1.png"
+                alt="brands-1"
+              />
+            </li>
+            <li class="brands__item">
+              <img
+                class="brands__img"
+                src="images/brands/2.png"
+                alt="brands-1"
+              />
+            </li>
+            <li class="brands__item">
+              <img
+                class="brands__img"
+                src="images/brands/3.png"
+                alt="brands-1"
+              />
+            </li>
+            <li class="brands__item">
+              <img
+                class="brands__img"
+                src="images/brands/4.png"
+                alt="brands-1"
+              />
+            </li>
+            <li class="brands__item">
+              <img
+                class="brands__img"
+                src="images/brands/5.png"
+                alt="brands-1"
+              />
+            </li>
           </ul>
         </div>
       </div>
@@ -511,10 +541,10 @@
               <span class="footer__address-text">
                 ADDRESS: 4772 Wines Lane Houston, TX 77032
               </span>
-              <a class="footer__tel" href="tel:8323475843"
+              <a class="footer__tel-text" href="tel:8323475843"
                 >TELEPHONE: +832-347-5843</a
               >
-              <a class="footer__email" href="mailto:contact@Glee.com"
+              <a class="footer__email-text" href="mailto:contact@Glee.com"
                 >EMAIL: contact@Glee.com</a
               >
             </address>
@@ -567,6 +597,7 @@
             <form class="footer__form">
               <label class="footer__form-label" for="email"></label>
               <input
+                id="email"
                 name="email"
                 class="footer__form-input"
                 type="email"
