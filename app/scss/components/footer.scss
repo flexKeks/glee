@@ -85,6 +85,11 @@
     display: flex;
   }
 
+  &__form-label {
+    font-size: 0;
+    line-height: 0;
+  }
+
   &__form-input {
     border: none;
     max-width: 170px;
