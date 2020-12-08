@@ -51,10 +51,12 @@
 
 .article {
   border-radius: 5px;
-  width: 370px;
+  max-width: 370px;
+  width: 100%;
   position: relative;
   z-index: 3;
   margin-right: 30px;
+  overflow: hidden;
 
   &:last-child {
     margin-right: 0;

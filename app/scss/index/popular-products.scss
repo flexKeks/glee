@@ -15,20 +15,20 @@
 
     &--left {
       padding-top: 97px;
-    }
 
-    &--left .popular-products__img {
-      left: 141px;
-      bottom: 91px;
-    }
+      .popular-products__img {
+        left: 141px;
+        bottom: 91px;
+      }
 
-    &--left .popular-products__content {
-      width: 337px;
-      margin-right: 145px;
-    }
+      .popular-products__content {
+        width: 337px;
+        margin-right: 145px;
+      }
 
-    &--left .popular-products__title {
-      margin-bottom: 16px;
+      .popular-products__title {
+        margin-bottom: 16px;
+      }
     }
 
     &--right {

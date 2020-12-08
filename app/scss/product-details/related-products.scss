@@ -3,15 +3,11 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 62px;
+    margin-bottom: 79px;
   }
 
   &__title {
     color: $secondary;
-  }
-
-  &__top-btns {
-    margin-top: -8px;
   }
 
   &__top-btn {
@@ -55,9 +51,43 @@
     }
   }
 
-  &__items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 30px;
+  &__slider {
+    .slick-list {
+      height: 400px;
+    }
+
+    .slick-slide.slick-active {
+      width: 300px;
+      padding: 0 15px;
+    }
+
+    .slick-next,
+    .slick-prev {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 2px solid $bg-secondary;
+      background: transparent;
+      margin-right: 16px;
+      transition: border-color 0.4s;
+      position: absolute;
+      top: -112px;
+      z-index: 5;
+
+      &:hover {
+        border-color: $bg;
+      }
+      path {
+        fill: $bg;
+      }
+    }
+
+    .slick-next {
+      right: 54px;
+    }
+    .slick-prev {
+      right: -16px;
+    }
   }
 }

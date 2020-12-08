@@ -59,7 +59,7 @@
     display: flex;
   }
 
-  &__statistics-item {
+  &__item {
     display: flex;
     flex-direction: column;
     padding-left: 55px;
@@ -127,7 +127,7 @@
     }
   }
 
-  &__statistics-num {
+  &__num {
     @extend %dmsans-700;
     font-size: 36px;
     line-height: 38px;
@@ -135,7 +135,7 @@
     margin-bottom: 3px;
   }
 
-  &__statistics-text {
+  &__text {
     @extend %dmsans-700;
     font-size: 16px;
     line-height: 17px;
@@ -230,6 +230,7 @@
 
 .team {
   margin-bottom: 180px;
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -290,7 +291,14 @@
 
   &__member {
     width: 370px;
+    height: 320px;
     position: relative;
+  }
+
+  &__img {
+    width: 370px;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__member-content {
@@ -338,36 +346,11 @@
     border-radius: 50%;
     background-color: #f6f6f6;
     margin-right: 7px;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
 
     &:last-child {
       margin-right: 0;
-    }
-
-    &:before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      background-repeat: no-repeat;
-    }
-
-    &--instagram:before {
-      background-image: url("../../images/icons/instagram.svg");
-      background-repeat: no-repeat;
-      width: 17px;
-      height: 17px;
-      left: 12px;
-      top: 12px;
-    }
-
-    &--google:before {
-      background-image: url("../../images/icons/google+.svg");
-      background-repeat: no-repeat;
-      width: 22px;
-      height: 14px;
-      left: 10px;
-      top: 13px;
     }
   }
 }

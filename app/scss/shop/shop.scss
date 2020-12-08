@@ -16,6 +16,7 @@
   &__content {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &--list {
       align-items: flex-start;
@@ -32,6 +33,29 @@
     &--list {
       display: block;
       width: 100%;
+    }
+  }
+}
+
+.shop-content {
+  &__filter-buttons {
+    margin-left: auto;
+    margin-top: -20px;
+  }
+
+  &__filter-btn {
+    outline: none;
+    line-height: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    margin-left: 15px;
+    cursor: pointer;
+
+    &.shop-content__filter-btn--active {
+      path {
+        fill: red;
+      }
     }
   }
 }
@@ -145,7 +169,6 @@
     display: block;
     color: $secondary;
     @extend %rubik-400;
-    font-size: 14px;
     line-height: 23px;
     font-size: 16px;
   }
