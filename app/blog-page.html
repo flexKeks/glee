@@ -232,8 +232,12 @@
 
               <div class="pagination">
                 <ul class="pagination__list">
-                  <li class="pagination__item pagination__link--active">
-                    <a class="pagination__link" href="#">1</a>
+                  <li class="pagination__item">
+                    <a
+                      class="pagination__link pagination__link--active"
+                      href="#"
+                      >1</a
+                    >
                   </li>
                   <li class="pagination__item">
                     <a class="pagination__link" href="#">2</a>
@@ -242,11 +246,13 @@
                     <a class="pagination__link" href="#">3</a>
                   </li>
                 </ul>
-                <a class="pagination__next" href="#">Next</a>
+                <a class="pagination__item pagination__item--next" href="#"
+                  >Next</a
+                >
               </div>
             </div>
 
-            <sidebar class="blog__sidebar">
+            <div class="blog__sidebar">
               <div class="blog__sidebar-search filter-search">
                 <form class="filter-search__form">
                   <label class="filter-search__label">
@@ -261,7 +267,7 @@
               </div>
 
               <div class="blog__sidebar-category filter-category">
-                <p class="filter__title">Category</p>
+                <p class="filter-title">Category</p>
                 <form class="filter-category__form">
                   <label class="filter-category__label">
                     <input
@@ -290,8 +296,8 @@
                 </form>
               </div>
 
-              <div class="filter__item recent-posts">
-                <p class="filter__title recent-posts__title">Recent posts</p>
+              <div class="recent-posts">
+                <p class="filter-title recent-posts__title">Recent posts</p>
                 <div class="recent-posts__items">
                   <div class="recent-posts__item">
                     <a class="recent-posts__link-img" href="#">
@@ -375,7 +381,7 @@
                   </div>
                 </div>
               </div>
-            </sidebar>
+            </div>
           </div>
         </div>
       </section>
@@ -426,7 +432,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
-          <div class="footer__contact">
+          <div class="footer__column footer__column--contact">
             <a class="logo footer__logo" href="">
               <img class="logo__img" src="images/logo.png" alt="Logo" />
             </a>
@@ -443,7 +449,7 @@
             </address>
           </div>
 
-          <div class="footer__services">
+          <div class="footer__column footer__column--services">
             <h6 class="footer__title">services</h6>
             <ul class="footer__list">
               <li class="footer__item">
@@ -464,7 +470,7 @@
             </ul>
           </div>
 
-          <div class="footer__account">
+          <div class="footer__column footer__column--account">
             <h6 class="footer__title">account</h6>
             <ul class="footer__list">
               <li class="footer__item">
@@ -482,7 +488,7 @@
             </ul>
           </div>
 
-          <div class="footer__item-form">
+          <div class="footer__column footer__column--form">
             <h6 class="footer__title footer__title--form">Newsletter</h6>
             <p class="footer__text">
               Subscribe by our newsletter and get update protidin.

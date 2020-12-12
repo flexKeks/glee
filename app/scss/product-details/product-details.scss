@@ -7,12 +7,14 @@
   }
 
   &__slide {
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
     margin-right: 67px;
   }
 
   &__content {
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
     padding-top: 33px;
     @extend %rubik-400;
   }

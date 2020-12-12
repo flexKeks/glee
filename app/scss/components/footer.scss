@@ -6,8 +6,21 @@
     border-bottom: 1px solid #dae4e9;
   }
 
-  &__contact {
-    margin-right: 98px;
+  &__column {
+    padding-top: 15px;
+    &--contact {
+      padding-top: 0;
+      margin-right: 98px;
+    }
+
+    &--services {
+      margin-right: 175px;
+      width: 125px;
+    }
+
+    &--account {
+      margin-right: 212px;
+    }
   }
 
   &__logo {
@@ -33,22 +46,6 @@
     width: 180px;
     line-height: 24px;
     margin-bottom: 6px;
-  }
-
-  &__services {
-    margin-right: 175px;
-    width: 125px;
-  }
-
-  &__account {
-    margin-right: 212px;
-  }
-
-  &__nav,
-  &__account,
-  &__services,
-  &__item-form {
-    padding-top: 15px;
   }
 
   &__title {

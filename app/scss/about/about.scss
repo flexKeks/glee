@@ -39,12 +39,12 @@
   &__title {
     color: $secondary;
     font-size: 36px;
-    line-height: 32px;
+    line-height: 1.2;
     @extend %dmsans-700;
     padding-bottom: 39px;
   }
 
-  &__text {
+  &__description {
     font-size: 16px;
     line-height: 30px;
     color: $secondary;
@@ -173,14 +173,14 @@
 
     &--clients {
       margin-right: 124px;
-    }
 
-    &--clients::before {
-      background-image: url("../../images/icons/clients.svg");
-      width: 73px;
-      height: 59px;
-      top: -77px;
-      left: 54px;
+      &::before {
+        background-image: url("../../images/icons/clients.svg");
+        width: 73px;
+        height: 59px;
+        top: -77px;
+        left: 54px;
+      }
     }
 
     &--delivery {
