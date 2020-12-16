@@ -54,7 +54,7 @@
       color: $secondary;
     }
 
-    &--bold {
+    .bold {
       @extend %rubik-500;
     }
 
@@ -166,7 +166,7 @@
 
 .comments {
   &__title {
-    margin-bottom: 55px;
+    margin-bottom: 25px;
     font-size: 24px;
     line-height: 36px;
     @extend %rubik-700;
@@ -177,22 +177,22 @@
   }
   .comment:nth-child(odd) {
     margin-left: 130px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
   }
 }
 
 .comment {
   display: flex;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   &__img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     margin-right: 30px;
   }
-  &__content {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #e0e0e0;
-  }
+
   &__content-top {
     display: flex;
     justify-content: space-between;
